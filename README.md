@@ -8,11 +8,11 @@ Adams, Joel C. "Patternlets: A Teaching Tool for Introducing Students to Paralle
 
 ## Getting started
 
-If you want to explore these patternlets, you may want to check out the companion [e-book](https://pdcbook.calvin.edu/pdcbook/RaspberryPiHandout/02simple_program/index.html), which is made available by [CSinParallel](https://csinparallel.org/index.html) group. 
+If you want to explore these patternlets, you can open the notebook provided in Google Colab. 
 
-To start compiling and running the examples, first run `make` in the `lib` directory. This will download Pyjama compiler and runtime from [Tennessee Tech's iPDC website](https://www.csc.tntech.edu/pdcincs/index.php/installation/). 
-
-Each sample program directory contains a Makefile. To compile and run the example, type `make run` in the directory. This will invoke Pyjama compiler to preprocess the Java file, run the Java compiler on the parallelized source code, then it will launch the Java VM with the parallelized code along with Pyjama runtime. 
+Alternatively, you can check out the companion [e-book](https://pdcbook.calvin.edu/pdcbook/RaspberryPiHandout/02simple_program/index.html), which is made available by [CSinParallel](https://csinparallel.org/index.html) group and work through the examples on your machine. 
+ - To start compiling and running the examples, first run `make` in the `lib` directory. This will download Pyjama compiler and runtime from [Tennessee Tech's iPDC website](https://www.csc.tntech.edu/pdcincs/index.php/installation/). 
+ - Each sample program directory contains a Makefile. To compile and run the example, type `make run` in the directory. This will invoke Pyjama compiler to preprocess the Java file, run the Java compiler on the parallelized source code, then it will launch the Java VM with the parallelized code along with Pyjama runtime. 
 
 ## Creating New Java Program with Pyjama
 
