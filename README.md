@@ -8,7 +8,7 @@ Adams, Joel C. "Patternlets: A Teaching Tool for Introducing Students to Paralle
 
 ## Getting started
 
-If you want to explore these patternlets, you can open the notebook provided in [Google Colab](https://colab.research.google.com/github/rkurniawati/pyjama-patternlets/blob/master/Java_OpenMP_Patternlets.ipynb\). 
+If you want to explore these patternlets, you can open the [Jupyter notebook provided](https://github.com/rkurniawati/pyjama-patternlets/blob/master/Java_OpenMP_Patternlets.ipynb) in [Google Colab](https://colab.research.google.com/github/rkurniawati/pyjama-patternlets/blob/master/Java_OpenMP_Patternlets.ipynb). 
 
 Alternatively, you can check out the companion [e-book](https://pdcbook.calvin.edu/pdcbook/RaspberryPiHandout/02simple_program/index.html), which is made available by [CSinParallel](https://csinparallel.org/index.html) group and work through the examples on your machine. 
  - To start compiling and running the examples, first run `make` in the `lib` directory. This will download Pyjama compiler and runtime from [Tennessee Tech's iPDC website](https://www.csc.tntech.edu/pdcincs/index.php/installation/). 
