@@ -6,7 +6,7 @@
  *
  * Usage: 
  *   make run [numThreads]
- *   Example: make run 4 
+ *   Example: make run ARGS=4 
  *
  * Exercise:
  * - Compile and run.  Note that incorrect output is produced by parallelSum()
@@ -25,8 +25,9 @@ class Reduction {
         }
         System.out.println();
 
-        // generate SIZE random values in [0..1000) range
-        int[] array = new Random().ints(SIZE, 0, 1000).toArray();
+        // Generate SIZE random values in [0..1000) range
+        // Fix the seed to 123 so the set of numbers will be the same in each run.
+        int[] array = new Random(123).ints(SIZE, 0, 1000).toArray();
         System.out.println("Seq. sum: \t" + sequentialSum(array));
         System.out.println("Par. sum: \t" + parallelSum(array));
     } 
@@ -35,8 +36,7 @@ class Reduction {
     /* sum the array sequentially */
     static int sequentialSum(int[] a) {
         int sum = 0;
-        int i;
-        for (i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++) {
             sum += a[i];
         }
         return sum;
