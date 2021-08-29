@@ -38,7 +38,10 @@ class Integration {
 
         //sum up all the trapezoids
 
-        //#omp parallel for shared(a, h, n, integral) /* reduction(+:integral) */
+        //option 1:
+        //#omp parallel for shared(a, h, n, integral) 
+        //option 2:
+        /*#omp parallel for shared(a, h, n)  reduction(+:integral) */
         for(int i = 1; i < n; i++) {
             integral += f(a+i*h);
         }
