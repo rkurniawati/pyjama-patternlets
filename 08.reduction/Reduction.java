@@ -54,4 +54,17 @@ class Reduction {
         }
         return sum;
     }
+
+    static int parallelSum2(int[] a) {
+        int sum = 0;
+        //#omp parallel shared(a,sum) 
+        {
+            //#omp for 
+            for(int i = 0; i < a.length;i++) {
+                //#omp critical
+                sum += a[i];
+            }
+        }
+        return sum;
+    }
 }

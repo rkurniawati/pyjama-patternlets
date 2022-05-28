@@ -1,2 +1,4 @@
 lib/Pyjama.jar
+lib/Pyjama/
+lib/*.zip
 *.class
