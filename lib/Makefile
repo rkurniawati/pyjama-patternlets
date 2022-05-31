@@ -1,4 +1,4 @@
-URL  = https://www.csc.tntech.edu/pdcincs/resources/modules/tools/updated/Pyjama.zip
+URL  = https://pdc-tools.s3.amazonaws.com/pyjama/Pyjama.zip
 PJ    = Pyjama
 JAR   = $(PJ).jar
 
